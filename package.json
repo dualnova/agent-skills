@@ -1,0 +1,58 @@
+{
+  "name": "@dualnova/agent-skills",
+  "version": "0.1.0",
+  "description": "Validator and reference implementation for the agent-skills standard — machine-readable instructions that let AI assistants (ChatGPT, Claude, Perplexity, Gemini) execute capabilities on your site's behalf.",
+  "keywords": [
+    "agent-skills",
+    "well-known",
+    "ai-agents",
+    "geo",
+    "generative-engine-optimization",
+    "mcp",
+    "model-context-protocol",
+    "ai-search",
+    "agent-ready",
+    "skill-discovery",
+    "chatgpt-actions",
+    "claude-tools",
+    "perplexity",
+    "gemini",
+    "openapi"
+  ],
+  "homepage": "https://github.com/DualNova/agent-skills#readme",
+  "bugs": {
+    "url": "https://github.com/DualNova/agent-skills/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DualNova/agent-skills.git"
+  },
+  "author": "DualNova LLC <hello@dualnova.org> (https://dualnova.org)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "agent-skills": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "spec",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
