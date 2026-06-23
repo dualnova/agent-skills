@@ -27,6 +27,13 @@ test('validateSkill: example contact-form SKILL.md is valid', () => {
   assert.equal(valid, true, JSON.stringify(issues, null, 2));
 });
 
+test('validateSkill: example publish-social-update SKILL.md is valid', () => {
+  const source = load('spec/examples/publish-social-update/SKILL.md');
+  const { valid, issues, parsed } = validateSkill(source);
+  assert.equal(valid, true, JSON.stringify(issues, null, 2));
+  assert.equal(parsed.frontmatter.requires_auth, true);
+});
+
 test('validateSkill: rejects missing required fields', () => {
   const source = `---
 description: missing name and version

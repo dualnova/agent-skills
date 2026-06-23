@@ -139,11 +139,12 @@ console.log(`Parsed skill: ${result.parsed.frontmatter.name}`);
 
 ## Examples
 
-The [`spec/examples/`](spec/examples) directory contains three production-grade SKILL.md files you can adapt:
+The [`spec/examples/`](spec/examples) directory contains four production-grade SKILL.md files you can adapt:
 
 - [`book-call/SKILL.md`](spec/examples/book-call/SKILL.md) — schedule a discovery call
 - [`get-quote/SKILL.md`](spec/examples/get-quote/SKILL.md) — request a fixed-price quote (with OpenAPI reference)
 - [`contact-form/SKILL.md`](spec/examples/contact-form/SKILL.md) — generic message form
+- [`publish-social-update/SKILL.md`](spec/examples/publish-social-update/SKILL.md) — approval-gated social publishing flow for tools such as TweetClaw
 
 ## Reference deployments
 
@@ -167,7 +168,7 @@ Want yours listed? Open a PR adding to the table above.
 
 **Draft v0.1 — May 2026.** This spec is intentionally tiny so the migration path is short. Breaking changes will bump the major version in `index.json`'s `version` field. Sites are encouraged to publish today.
 
-We're collecting feedback in [Discussions](https://github.com/DualNova/agent-skills/discussions). If you publish skills on your site, let us know — we'll add you to the reference deployments table.
+We're collecting feedback in [issues](https://github.com/DualNova/agent-skills/issues). If you publish skills on your site, let us know — we'll add you to the reference deployments table.
 
 ## License
 
